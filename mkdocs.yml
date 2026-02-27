@@ -1,4 +1,6 @@
-site_name: Портфолио Python разработчика
+site_name: Роза Тихонова, портфолио
+docs_dir: source
+site_dir: docs
 
 theme:
   name: material
@@ -6,6 +8,13 @@ theme:
 
 nav:
   - Главная: index.md
-  - Проекты: projects.md
-  - Навыки: skills.md
-  - Контакты: contacts.md
+  - Об авторе: about.md
+  - Лабораторные работы:
+      - Лаб. работа 1: labs/lab1.md
+      - Лаб. работа 2: labs/lab2.md
+      - Лаб. работа 3: labs/lab3.md
+      - Лаб. работа 4: labs/lab4.md
+      - Лаб. работа 5: labs/lab5.md
+      
+extra:
+  generator: false
