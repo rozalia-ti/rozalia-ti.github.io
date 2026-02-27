@@ -28,4 +28,4 @@
 3. Выполнить сборку сайта
 `mkdocs build`
 
-Также сайт доступен по адресу `https://rozalia-ti.github.io`
+Также сайт доступен по адресу [https://rozalia-ti.github.io/](https://rozalia-ti.github.io/)
