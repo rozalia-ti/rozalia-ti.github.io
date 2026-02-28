@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2" class="md-skip">
+        <a href="#no2-numpy-pandas-matplotlib-seaborn" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -387,10 +387,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#501455-p3122" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Тихонова Роза 501455 P3122
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Цель работы
+        Описание проекта
       
     </span>
   </a>
@@ -401,7 +412,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Задание
+        Запуск тестов:
       
     </span>
   </a>
@@ -412,7 +423,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Код
+        Цель работы
       
     </span>
   </a>
@@ -423,7 +434,7 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Выводы:
+        Задание
       
     </span>
   </a>
@@ -557,10 +568,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#501455-p3122" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Тихонова Роза 501455 P3122
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Цель работы
+        Описание проекта
       
     </span>
   </a>
@@ -571,7 +593,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Задание
+        Запуск тестов:
       
     </span>
   </a>
@@ -582,7 +604,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Код
+        Цель работы
       
     </span>
   </a>
@@ -593,7 +615,7 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Выводы:
+        Задание
       
     </span>
   </a>
@@ -617,14 +639,217 @@
 
 
 
-<h1 id="2">Лабораторная работа 2:</h1>
-<p>Работа ещё не выполнена.</p>
-<h2 id="_1">Цель работы</h2>
-<h2 id="_2">Задание</h2>
-<h2 id="_3">Код</h2>
-<pre><code class="language-python"># Здесь будет находиться код
+<h1 id="no2-numpy-pandas-matplotlib-seaborn">Лабораторная работа №2: Работа с библиотеками NumPy, Pandas, Matplotlib и Seaborn</h1>
+<h2 id="501455-p3122">Тихонова Роза 501455 P3122</h2>
+<h2 id="_1">Описание проекта</h2>
+<p>Данная лабораторная работа демонстрирует основы работы с ключевыми библиотеками Python для научных вычислений и анализа данных:
+- NumPy - для работы с многомерными массивами и матрицами
+- Pandas - для загрузки и обработки данных
+- Matplotlib - для базовой визуализации
+- Seaborn - для статистической визуализации</p>
+<h2 id="_2">Запуск тестов:</h2>
+<p><strong>Запуск всех тестов с подробным выводом</strong>
+<code>python -m pytest test.py -v</code></p>
+<p><strong>Запуск конкретного теста</strong>
+<code>python -m pytest test.py::test_create_vector -v</code></p>
+<h2 id="_3">Цель работы</h2>
+<ul>
+<li>Научиться создавать и манипулировать многомерными массивами (векторами и матрицами)</li>
+<li>Освоить базовые операции линейной алгебры</li>
+<li>Научиться строить гистограммы для анализа распределения данных (Matplotlib)</li>
+<li>Освоить создание тепловых карт для визуализации корреляций (Seaborn)</li>
+<li>Научиться строить линейные графики для отображения зависимостей (Matplotlib)</li>
+</ul>
+<h2 id="_4">Задание</h2>
+<ol>
+<li>
+<p>Создайте виртуальное окружение:
+    <code>python -m venv numpy_env</code></p>
+</li>
+<li>
+<p>Активируйте виртуальное окружение:</p>
+<ul>
+<li>Windows: numpy_env\Scripts\activate</li>
+<li>Linux/Mac: source numpy_env/bin/activate</li>
+</ul>
+</li>
+<li>
+<p>Установите зависимости:
+    <code>pip install numpy matplotlib seaborn pandas pytest</code></p>
+</li>
+</ol>
+<p>Структура проекта:</p>
+<p>numpy_lab/
+ ├── main.py
+ ├── test.py
+ ├── data/
+ │   └── students_scores.csv
+ └── plots/</p>
+<p>В папке data создайте файл students_scores.csv со следующим содержимым:</p>
+<p>math,physics,informatics
+ 78,81,90
+ 85,89,88
+ 92,94,95
+ 70,75,72
+ 88,84,91
+ 95,99,98
+ 60,65,70
+ 73,70,68
+ 84,86,85
+ 90,93,92</p>
+<ul>
+<li>Задача: реализовать все функции, чтобы проходили тесты.</li>
+</ul>
+<h1 id="_5">Код</h1>
+<pre><code class="language-python">import os
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# 1. СОЗДАНИЕ И ОБРАБОТКА МАССИВОВ
+
+def create_vector():
+    return np.arange(10)
+
+
+def create_matrix():
+    return np.random.rand(5,5)
+
+def reshape_vector(vec):
+    return vec.reshape(2,5)
+
+
+def transpose_matrix(mat):
+    return np.transpose(mat)
+
+
+# 2. ВЕКТОРНЫЕ ОПЕРАЦИИ
+
+def vector_add(a, b):
+    return a + b;
+
+
+def scalar_multiply(vec, scalar):
+    return vec*scalar
+
+
+def elementwise_multiply(a, b):
+    return a*b;
+
+
+def dot_product(a, b):
+    return np.dot(a, b)
+
+
+# 3. МАТРИЧНЫЕ ОПЕРАЦИИ
+
+def matrix_multiply(a, b):
+    return np.matmul(a, b);
+
+
+def matrix_determinant(a):
+    return np.linalg.det(a)
+
+
+def matrix_inverse(a):
+    return np.linalg.inv(a)
+
+
+def solve_linear_system(a, b):
+    return np.linalg.solve(a, b)
+
+
+# 4. СТАТИСТИЧЕСКИЙ АНАЛИЗ
+
+def load_dataset(path=&quot;data/students_scores.csv&quot;):
+    return pd.read_csv(path).to_numpy()
+
+
+def statistical_analysis(data):
+     return {
+        &quot;mean&quot;: np.mean(data),
+        &quot;median&quot;: np.median(data),
+        &quot;std&quot;: np.std(data),
+        &quot;min&quot;: np.min(data),
+        &quot;max&quot;: np.max(data),
+        &quot;percentile_25&quot;: np.percentile(data, 25),
+        &quot;percentile_75&quot;: np.percentile(data, 75)
+    }
+
+
+def normalize_data(data):
+    min_val = np.min(data)
+    max_val = np.max(data)
+    normalized = (data - min_val) / (max_val - min_val)
+    return normalized
+
+# 5. ВИЗУАЛИЗАЦИЯ
+
+def plot_histogram(data):
+    plt.hist(data, bins='auto', alpha = 0.7)
+    plt.title('Распределение оценок по математике')
+    plt.xlabel('Оценки')
+    plt.ylabel('Частота')
+    plt.savefig('plots/histogram.png')
+    pass
+
+
+def plot_heatmap(matrix):
+    &quot;&quot;&quot;
+    Построить тепловую карту корреляции предметов.
+
+    Изучить:
+    https://seaborn.pydata.org/generated/seaborn.heatmap.html
+
+    Args:
+        matrix (numpy.ndarray): Матрица корреляции
+    &quot;&quot;&quot;
+
+    plt.figure(figsize=(8, 6)) 
+    sns.heatmap(matrix, 
+                annot=True,           # Show values in cells
+                cmap='coolwarm',      # Color map suitable for correlations (-1 to 1)
+                center=0,             # Center the colormap at 0
+                square=True,          # Make cells square
+                cbar_kws={&quot;shrink&quot;: 0.8}) # Shrink colorbar
+
+    plt.title('Тепловая карта корреляции предметов', fontsize=14)
+    plt.tight_layout()
+    plt.savefig('plots/heatmap.png', dpi=300, bbox_inches='tight')
+    plt.show()
+    plt.clf()
+
+    pass
+
+
+def plot_line(x, y):
+    &quot;&quot;&quot;
+    Построить график зависимости: студент -&gt; оценка по математике.
+
+    Изучить:
+    https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html
+
+    Args:
+        x (numpy.ndarray): Номера студентов
+        y (numpy.ndarray): Оценки студентов
+    &quot;&quot;&quot;
+    # Подсказка: используйте plt.plot(), добавьте заголовок, подписи осей,
+    # сохраните график
+    os.makedirs('plots', exist_ok=True)
+    plt.figure(figsize=(10, 6))
+    plt.plot(x, y, 'bo-')
+    plt.title('Зависимость оценок студентов по математике')
+    plt.xlabel('Номер студента')
+    plt.ylabel('Оценка')
+    plt.grid(True)
+
+    plt.savefig('plots/student_scores.png')
+    plt.show()
+    plt.close()
 </code></pre>
-<h2 id="_4">Выводы:</h2>
+<h2 id="_6">Выводы:</h2>
+<p>В ходе выполнения лабораторной работы №2 я узнала о ключевых библиотеках Python для научных вычислений: NumPy для работы с многомерными массивами, Pandas для загрузки табличных данных, Matplotlib и Seaborn для визуализации. Я научилась создавать векторы и матрицы различных размерностей, выполнять математические операции сложения и умножения.</p>
 
 
 
